@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@mipmap/bg_video"
+    android:keepScreenOn="true"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relative"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <SurfaceView
+                android:id="@+id/surface_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/maximize"
+                android:id="@+id/maximizes"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="bottom|end"
+                android:layout_height="wrap_content" />
+
+
+            <!-- <SeekBar
+                 android:layout_width="match_parent"
+                 android:layout_gravity="bottom"
+                 android:id="@+id/seekbar"
+                 style="?android:attr/progressBarStyleHorizontal"
+                 android:layout_height="wrap_content" />-->
+
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:id="@+id/linear"
+            android:layout_below="@+id/relative"
+            android:layout_height="wrap_content">
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/add"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:text="Enthrals Music Lover"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/detail"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/linear"
+            android:id="@+id/seeklayout"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_gravity="bottom"
+                android:id="@+id/seekbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/seekbar"
+                android:text="02:05"
+                android:id="@+id/starttime"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/seekbar"
+                android:text="03:25"
+                android:id="@+id/endtime"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/seeklayout"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/backward_vert_video"
+                android:layout_marginRight="20dp"
+                android:id="@+id/back"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/previous_vert_video"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/play_video_vert"
+                android:layout_marginRight="20dp"
+                android:id="@+id/media"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/next_vert_video"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/foward_vert_video"
+                android:layout_marginRight="20dp"
+                android:id="@+id/forward"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>
